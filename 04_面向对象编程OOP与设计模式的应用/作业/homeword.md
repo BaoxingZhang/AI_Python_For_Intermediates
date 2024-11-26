@@ -12,12 +12,12 @@ PPT: [ https://gamma.app/docs/OOP-m4y912u69aj3wk6](https://gamma.app/docs/OOP-m4
 
 示例：
 
-复制代码
-
 ```python
 logger = Logger.get_logger("INFO")
 logger.log("This is an info message")  # 输出: [INFO] This is an info message
 ```
+
+
 
 #### 练习题 2：猴子补丁
 
@@ -30,8 +30,6 @@ logger.log("This is an info message")  # 输出: [INFO] This is an info message
 3. 编写测试代码，验证猴子补丁是否正确修复了错误。
 
 示例：
-
-复制代码
 
 ```python
 # 原始方法
@@ -50,6 +48,8 @@ instance = ExternalClass()
 assert instance.calculate(2, 3) == 6
 ```
 
+
+
 #### 练习题 3：接口与类型检查
 
 题目： 设计一个支付系统，包含一个支付接口 PaymentProcessor，定义一个 process_payment 方法。然后实现两个具体的支付处理器 CreditCardProcessor 和 PayPalProcessor，分别处理信用卡支付和 PayPal 支付。
@@ -61,8 +61,6 @@ assert instance.calculate(2, 3) == 6
 3. 编写一个函数 process_all_payments，接受一个支付处理器列表，并调用每个处理器的 process_payment 方法。
 
 示例：
-
-复制代码
 
 ```python
 from abc import ABC, abstractmethod
@@ -90,6 +88,8 @@ processors = [CreditCardProcessor(), PayPalProcessor()]
 process_all_payments(processors, 100.0)
 ```
 
+
+
 #### 练习题 4：静态协议与类型注解
 
 题目： 设计一个数据转换系统，包含一个数据转换器接口 DataTransformer，定义一个 transform 方法。然后实现两个具体的数据转换器 CSVTransformer 和 JSONTransformer，分别处理 CSV 和 JSON 数据的转换。
@@ -101,8 +101,6 @@ process_all_payments(processors, 100.0)
 3. 编写一个函数 apply_transformation，接受一个数据转换器实例和数据，并调用转换器的 transform 方法。
 
 示例：
-
-复制代码
 
 ```python
 from typing import Protocol, List, Dict, Any
